@@ -7,5 +7,6 @@ description: Add custom tabs to jellyfin home screen
 overview: Custom tabs
 framework: net9.0
 targetAbi: 10.11.2
+changelog: Minor bug fix
 artifacts:
   - "Jellyfin.Plugin.CustomTabs.dll"
