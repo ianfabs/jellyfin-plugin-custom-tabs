@@ -23,8 +23,6 @@ jobs:
     
     - name: Restore dependencies
       run: dotnet restore
-    - name: Output assets
-      run: dotnet msbuild /t:OutputAssetsJson
     - name: Cat out assets json file
       run: cat obj/project.assets.json
     - name: jprm-build
