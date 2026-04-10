@@ -34,6 +34,7 @@ jobs:
         path: ./artifacts/custom-tabs_0.2.8.1.zip
     - name: Create release
       uses: softprops/action-gh-release@v2
+      if: github.ref_type == 'tag'
       with:
         files: ./artifacts/custom-tabs_0.2.8.1.zip
       env:
