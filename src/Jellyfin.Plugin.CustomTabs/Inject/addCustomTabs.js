@@ -82,7 +82,7 @@ if (typeof window.customTabsPlugin == 'undefined') {
 
                     const button = document.createElement("button");
                     button.type = "button";
-                    button.setAttribute("is", "empty-button");
+                    button.setAttribute("is", "emby-button");
                     button.classList.add("emby-tab-button", "emby-button");
                     button.setAttribute("data-index", i + 2);
                     button.setAttribute("id", customTabId);
