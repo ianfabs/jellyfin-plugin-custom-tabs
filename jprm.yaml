@@ -4,4 +4,4 @@ owner: ianfabs
 category: General
 version: 0.2.8.1
 description: Add custom tabs to jellyfin home screen
-framework: net8.0
+framework: net9.0
