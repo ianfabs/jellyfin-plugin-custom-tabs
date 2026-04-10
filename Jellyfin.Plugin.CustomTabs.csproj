@@ -30,8 +30,8 @@
       <None Remove="Inject\tabTemplate.html" />
       <EmbeddedResource Include="Inject\tabTemplate.html" />
       
-      <None Include="..\..\README.md" />
-      <None Include="..\logo.png" CopyToOutputDirectory="Always" />
+      <None Include=".\README.md" />
+      <None Include=".\logo.png" CopyToOutputDirectory="Always" />
     </ItemGroup>
 
     <!-- 10.10.7 Specific Code from non 10.10.7 builds -->
