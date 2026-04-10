@@ -33,7 +33,7 @@ jobs:
         name: custom-tabs-zip
         path: ./artifacts/custom-tabs_0.2.8.1.zip
     - name: Create release
-      uses: softprops/action-gh-release@v6
+      uses: softprops/action-gh-release@v2
       with:
         files: ./artifacts/custom-tabs_0.2.8.1.zip
       env:
