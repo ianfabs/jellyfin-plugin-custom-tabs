@@ -27,3 +27,14 @@ jobs:
       run: cat obj/project.assets.json
     - name: jprm-build
       uses: oddstr13/jellyfin-plugin-repository-manager@v1.1.1
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: custom-tabs-zip
+        path: ./artifacts/custom-tabs_0.2.8.1.zip
+    - name: Create release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: ./artifacts/custom-tabs_0.2.8.1.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
